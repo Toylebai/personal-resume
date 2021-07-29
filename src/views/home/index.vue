@@ -129,7 +129,7 @@ export default {
                 .each-item {
                   line-height: 25px;
                   margin-left: 20px;
-                  padding-bottom: 10px;
+                  padding-bottom: 20px;
                 }
               }
             }
