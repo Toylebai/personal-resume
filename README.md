@@ -22,3 +22,10 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+$ npm run build
+$ git checkout -b gh-pages
+$ git add -f dist
+$ git commit -m 'create project'
+$ git subtree push --prefix dist origin gh-pages
