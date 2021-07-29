@@ -8,14 +8,14 @@ export default {
   components: {},
 };
 </script>
-<style lang="css" scoped>
+<style lang="scss">
 .header {
   width: 100%;
-  height: 340px;
+  height: px2rem(340);
   background: linear-gradient(to top, #373737, #212121);
-  line-height: 340px;
+  line-height: px2rem(340);
   text-align: center;
-  font-size: 42px;
+  font-size: px2rem(42);
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
   color: #fff;

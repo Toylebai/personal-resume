@@ -27,26 +27,27 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
+<style lang="scss">
 .content-item {
-  padding-left: 20px;
-}
-.title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
+  .content-item-wrapper {
+    .title {
+      font-size: px2rem(26);
+      font-weight: 700;
+      margin-bottom: px2rem(20) 0 px2rem(24) px2rem(20);
+    }
 
-.item-container {
-  padding-left: 20px;
-}
+    .item-container {
+      margin-right: px2rem(20);
 
-.item {
-  font-size: 14px;
-  line-height: 40px;
-}
+      .item {
+        font-size: px2rem(14);
+        line-height: px2rem(40);
 
-.num {
-  padding-right: 10px;
+        .num {
+          padding-right: px2rem(10);
+        }
+      }
+    }
+  }
 }
 </style>

@@ -10,10 +10,10 @@ export default {
   components: {},
 };
 </script>
-<style lang="css">
+<style lang="scss">
 html body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -21,9 +21,10 @@ html body {
 #app {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-height: px2rem(500);
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 ul p {

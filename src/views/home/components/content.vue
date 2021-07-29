@@ -58,17 +58,18 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
+<style lang="scss">
 .content {
-  width: 800px;
+  width: 95%;
   height: auto;
-  padding: 20px 10px;
+  padding: 20px 0;
   margin: 0 auto;
   box-shadow: 0 0 0 3px rgba(185, 169, 169, 0.1);
-}
-.title {
-  font-size: 26px;
-  font-weight: 700;
-  margin: 20px 0 24px 20px;
+
+  .title {
+    font-size: px2rem(26);
+    font-weight: 700;
+    margin: 20px 0 24px 20px;
+  }
 }
 </style>
