@@ -1,5 +1,5 @@
 <template>
-  <div class="home" :class="ismOrpc === 'PCoperation' ? 'pc-home' : ''">
+  <div class="about" :class="ismOrpc === 'PCoperation' ? 'pc-about' : ''">
     <header-content />
     <content-list />
   </div>
@@ -8,6 +8,7 @@
 <script>
 import HeaderContent from "./components/header.vue";
 import ContentList from "./components/content.vue";
+
 import { mobileMixins } from "@/mixins/check-mobile-mixin.js";
 
 export default {
@@ -18,11 +19,11 @@ export default {
 };
 </script>
 <style lang="scss">
-.home {
+.about {
   flex: 1;
   font-size: 30px;
 }
-.pc-home {
+.pc-about {
   flex: 1;
   font-size: 30px;
   z-index: 99;
@@ -30,7 +31,7 @@ export default {
   .header {
     width: 100%;
     height: 340px;
-    background: linear-gradient(to top, #373737, #212121);
+    background: linear-gradient(to top, #373737, #645d5d);
     line-height: 340px;
     text-align: center;
     font-size: 42px;
