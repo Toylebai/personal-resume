@@ -4,16 +4,12 @@
       class="mobile-nav"
       v-if="ismOrpc === 'Moperation'"
       :class="isMenu ? 'bg' : ''"
+      @click.stop="onMask"
     >
-      <div
-        class="nav-wrapper"
-        :class="isMenu ? 'transform' : ''"
-        @click.stop="onMask"
-      >
+      <div class="nav-wrapper" :class="isMenu ? 'transform' : ''">
         <p @click.stop="onJump('home')">Home</p>
         <p @click.stop="onJump('about')">About</p>
       </div>
-      <!-- <div class="mask"  @click.stop="onMask"></div> -->
     </div>
     <div class="nav" v-else>
       <div class="nav-wrapper">
@@ -22,7 +18,12 @@
       </div>
     </div>
     <div class="content-container">
-      <div class="menu" v-if="ismOrpc === 'Moperation'" @click="onMenu">
+      <div
+        class="menu"
+        v-if="ismOrpc === 'Moperation'"
+        :class="isMenu ? 'z-index' : ''"
+        @click="onMenu"
+      >
         <img src="@/assets/menu.png" />
       </div>
       <router-view />
@@ -122,6 +123,10 @@ li {
   height: 100%;
   position: relative;
 
+  .z-index {
+    z-index: 0 !important;
+  }
+
   .menu {
     position: absolute;
     top: 10px;
@@ -167,23 +172,10 @@ li {
     transition: 0.5s;
     z-index: 999;
   }
+}
 
-  .mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    display: none;
-    z-index: 2;
-  }
-
-  .bg {
-    background: rgba(0, 0, 0, 0.1);
-    display: block;
-  }
+.bg {
+  background: rgba(0, 0, 0, 0.1);
+  display: block;
 }
 </style>
