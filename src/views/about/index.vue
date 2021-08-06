@@ -12,7 +12,7 @@ import ContentList from "./components/content.vue";
 import { mobileMixins } from "@/mixins/check-mobile-mixin.js";
 
 export default {
-  name: "Home",
+  name: "About",
   components: { HeaderContent, ContentList },
 
   mixins: [mobileMixins],
@@ -28,7 +28,7 @@ export default {
   font-size: 30px;
   z-index: 99;
 
-  .header {
+  .about-header {
     width: 100%;
     height: 340px;
     background: linear-gradient(to top, #373737, #645d5d);

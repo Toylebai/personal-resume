@@ -51,7 +51,7 @@ export const mobileMixins = {
         window.screenWidth = document.body.clientWidth;
         that.screenWidth = window.screenWidth;
 
-        that.ismOrpc = that.screenWidth < 400 ? "Moperation" : "PCoperation";
+        that.ismOrpc = that.screenWidth < 500 ? "Moperation" : "PCoperation";
       })();
     };
   },

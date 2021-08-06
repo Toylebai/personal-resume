@@ -1,5 +1,5 @@
 <template>
-  <div class="header">个人简历</div>
+  <div class="home-header">个人简历</div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.header {
+.home-header {
   width: 100%;
   height: px2rem(340);
   background: linear-gradient(to top, #373737, #212121);

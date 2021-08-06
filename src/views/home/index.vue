@@ -27,7 +27,7 @@ export default {
   font-size: 30px;
   z-index: 99;
 
-  .header {
+  .home-header {
     width: 100%;
     height: 340px;
     background: linear-gradient(to top, #373737, #212121);

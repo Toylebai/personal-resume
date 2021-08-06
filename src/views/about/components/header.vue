@@ -1,5 +1,5 @@
 <template>
-  <div class="header">啦啦啦啦</div>
+  <div class="about-header">啦啦啦啦</div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.header {
+.about-header {
   width: 100%;
   height: px2rem(340);
   background: linear-gradient(to top, #373737, #645d5d);

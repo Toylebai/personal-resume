@@ -17,6 +17,7 @@
         <router-link tag="p" to="/about">About</router-link>
       </div>
     </div>
+
     <div class="content-container">
       <div
         class="menu"
@@ -26,6 +27,7 @@
       >
         <img src="@/assets/menu.png" />
       </div>
+
       <router-view />
     </div>
   </div>
